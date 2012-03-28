@@ -1,0 +1,239 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 80.81     14.87    14.87    37420     0.00     0.00  Hirschberg::B(int, int, std::string, std::string, int*)
+ 17.31     18.05     3.18 600117922     0.00     0.00  int const& std::max<int>(int const&, int const&)
+  1.47     18.32     0.27        1     0.27     0.27  global constructors keyed to Hirschberg::B(int, int, std::string, std::string, int*)
+  0.11     18.34     0.02  1218004     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::base() const
+  0.11     18.36     0.02   609002     0.00     0.00  bool __gnu_cxx::operator< <char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&)
+  0.11     18.38     0.02   571582     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&)
+  0.05     18.39     0.01  1143164     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::string>::operator--()
+  0.05     18.40     0.01   609002     0.00     0.00  bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&)
+  0.05     18.41     0.01   571582     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::string>::operator*() const
+  0.05     18.42     0.01        2     0.01     9.08  Hirschberg::C(int, int, std::string, std::string, std::string)
+  0.00     18.42     0.00  1218004     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::string>::base() const
+  0.00     18.42     0.00   590292     0.00     0.00  std::iterator<std::random_access_iterator_tag, char, long, char*, char&>::iterator()
+  0.00     18.42     0.00   571582     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const
+  0.00     18.42     0.00   571582     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int)
+  0.00     18.42     0.00    18710     0.00     0.00  __gnu_cxx::__normal_iterator<char*, std::string>::__normal_iterator()
+  0.00     18.42     0.00    18710     0.00     0.00  std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator()
+  0.00     18.42     0.00        4     0.00     0.00  Hirschberg::diff(timespec, timespec)
+  0.00     18.42     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     18.42     0.00        1     0.00    18.15  Hirschberg::read_write()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.05% of 18.42 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     98.5    0.00   18.15                 main [1]
+                0.00   18.15       1/1           Hirschberg::read_write() [3]
+-----------------------------------------------
+                               37420             Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+                0.01   18.14       2/2           Hirschberg::read_write() [3]
+[2]     98.5    0.01   18.14       2+37420   Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+               14.87    3.18   37420/37420       Hirschberg::B(int, int, std::string, std::string, int*) [4]
+                0.01    0.04  609002/609002      bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [8]
+                0.00    0.03  571582/571582      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int) [9]
+                0.00    0.02  571582/571582      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const [13]
+                0.00    0.00   18710/18710       std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator() [23]
+                               37420             Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+-----------------------------------------------
+                0.00   18.15       1/1           main [1]
+[3]     98.5    0.00   18.15       1         Hirschberg::read_write() [3]
+                0.01   18.14       2/2           Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+                0.00    0.00       4/4           Hirschberg::diff(timespec, timespec) [24]
+-----------------------------------------------
+               14.87    3.18   37420/37420       Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+[4]     98.0   14.87    3.18   37420         Hirschberg::B(int, int, std::string, std::string, int*) [4]
+                3.18    0.00 600117922/600117922     int const& std::max<int>(int const&, int const&) [5]
+-----------------------------------------------
+                3.18    0.00 600117922/600117922     Hirschberg::B(int, int, std::string, std::string, int*) [4]
+[5]     17.3    3.18    0.00 600117922         int const& std::max<int>(int const&, int const&) [5]
+-----------------------------------------------
+                0.27    0.00       1/1           __do_global_ctors_aux [7]
+[6]      1.5    0.27    0.00       1         global constructors keyed to Hirschberg::B(int, int, std::string, std::string, int*) [6]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      1.5    0.00    0.27                 __do_global_ctors_aux [7]
+                0.27    0.00       1/1           global constructors keyed to Hirschberg::B(int, int, std::string, std::string, int*) [6]
+-----------------------------------------------
+                0.01    0.04  609002/609002      Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+[8]      0.3    0.01    0.04  609002         bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [8]
+                0.02    0.00 1218004/1218004     std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::base() const [10]
+                0.02    0.00  609002/609002      bool __gnu_cxx::operator< <char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&) [11]
+-----------------------------------------------
+                0.00    0.03  571582/571582      Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+[9]      0.1    0.00    0.03  571582         std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int) [9]
+                0.02    0.00  571582/571582      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [12]
+                0.01    0.00  571582/1143164     __gnu_cxx::__normal_iterator<char*, std::string>::operator--() [14]
+-----------------------------------------------
+                0.02    0.00 1218004/1218004     bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [8]
+[10]     0.1    0.02    0.00 1218004         std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::base() const [10]
+-----------------------------------------------
+                0.02    0.00  609002/609002      bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [8]
+[11]     0.1    0.02    0.00  609002         bool __gnu_cxx::operator< <char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&) [11]
+                0.00    0.00 1218004/1218004     __gnu_cxx::__normal_iterator<char*, std::string>::base() const [20]
+-----------------------------------------------
+                0.02    0.00  571582/571582      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int) [9]
+[12]     0.1    0.02    0.00  571582         std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [12]
+                0.00    0.00  571582/590292      std::iterator<std::random_access_iterator_tag, char, long, char*, char&>::iterator() [21]
+-----------------------------------------------
+                0.00    0.02  571582/571582      Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+[13]     0.1    0.00    0.02  571582         std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const [13]
+                0.01    0.00  571582/571582      __gnu_cxx::__normal_iterator<char*, std::string>::operator*() const [15]
+                0.01    0.00  571582/1143164     __gnu_cxx::__normal_iterator<char*, std::string>::operator--() [14]
+-----------------------------------------------
+                0.01    0.00  571582/1143164     std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int) [9]
+                0.01    0.00  571582/1143164     std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const [13]
+[14]     0.1    0.01    0.00 1143164         __gnu_cxx::__normal_iterator<char*, std::string>::operator--() [14]
+-----------------------------------------------
+                0.01    0.00  571582/571582      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const [13]
+[15]     0.1    0.01    0.00  571582         __gnu_cxx::__normal_iterator<char*, std::string>::operator*() const [15]
+-----------------------------------------------
+                0.00    0.00 1218004/1218004     bool __gnu_cxx::operator< <char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&) [11]
+[20]     0.0    0.00    0.00 1218004         __gnu_cxx::__normal_iterator<char*, std::string>::base() const [20]
+-----------------------------------------------
+                0.00    0.00   18710/590292      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator() [23]
+                0.00    0.00  571582/590292      std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&) [12]
+[21]     0.0    0.00    0.00  590292         std::iterator<std::random_access_iterator_tag, char, long, char*, char&>::iterator() [21]
+-----------------------------------------------
+                0.00    0.00   18710/18710       std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator() [23]
+[22]     0.0    0.00    0.00   18710         __gnu_cxx::__normal_iterator<char*, std::string>::__normal_iterator() [22]
+-----------------------------------------------
+                0.00    0.00   18710/18710       Hirschberg::C(int, int, std::string, std::string, std::string) [2]
+[23]     0.0    0.00    0.00   18710         std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator() [23]
+                0.00    0.00   18710/590292      std::iterator<std::random_access_iterator_tag, char, long, char*, char&>::iterator() [21]
+                0.00    0.00   18710/18710       __gnu_cxx::__normal_iterator<char*, std::string>::__normal_iterator() [22]
+-----------------------------------------------
+                0.00    0.00       4/4           Hirschberg::read_write() [3]
+[24]     0.0    0.00    0.00       4         Hirschberg::diff(timespec, timespec) [24]
+-----------------------------------------------
+                0.00    0.00       1/1           global constructors keyed to Hirschberg::B(int, int, std::string, std::string, int*) [6]
+[25]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [25]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+   [6] global constructors keyed to Hirschberg::B(int, int, std::string, std::string, int*) (hirschberg.cpp) [14] __gnu_cxx::__normal_iterator<char*, std::string>::operator--() [23] std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator()
+  [25] __static_initialization_and_destruction_0(int, int) (hirschberg.cpp) [11] bool __gnu_cxx::operator< <char*, std::string>(__gnu_cxx::__normal_iterator<char*, std::string> const&, __gnu_cxx::__normal_iterator<char*, std::string> const&) [9] std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator++(int)
+   [3] Hirschberg::read_write() [20] __gnu_cxx::__normal_iterator<char*, std::string>::base() const [21] std::iterator<std::random_access_iterator_tag, char, long, char*, char&>::iterator()
+   [4] Hirschberg::B(int, int, std::string, std::string, int*) [15] __gnu_cxx::__normal_iterator<char*, std::string>::operator*() const [5] int const& std::max<int>(int const&, int const&)
+   [2] Hirschberg::C(int, int, std::string, std::string, std::string) [10] std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::base() const [8] bool std::operator< <__gnu_cxx::__normal_iterator<char*, std::string> >(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&, std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&)
+  [24] Hirschberg::diff(timespec, timespec) [13] std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::operator*() const
+  [22] __gnu_cxx::__normal_iterator<char*, std::string>::__normal_iterator() [12] std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> >::reverse_iterator(std::reverse_iterator<__gnu_cxx::__normal_iterator<char*, std::string> > const&)

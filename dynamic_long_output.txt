@@ -1,0 +1,94 @@
+ the length of lcs is 3267 for string length 5000 0.833703247
+ the length of lcs is 3584 for string length 5500 0.932162015
+ the length of lcs is 3909 for string length 6000 1.487607714
+ the length of lcs is 4243 for string length 6500 1.296524137
+ the length of lcs is 4576 for string length 7000 1.499243271
+ the length of lcs is 4900 for string length 7500 1.722097574
+ the length of lcs is 5236 for string length 8000 1.960009042
+ the length of lcs is 5540 for string length 8500 2.211914270
+ the length of lcs is 5848 for string length 9000 2.474060494
+ the length of lcs is 6195 for string length 9500 2.759068236
+ the length of lcs is 6490 for string length 10000 3.60019295
+ the length of lcs is 6833 for string length 10500 3.364206593
+ the length of lcs is 7179 for string length 11000 3.681984542
+ the length of lcs is 7489 for string length 11500 4.34995190
+ the length of lcs is 7817 for string length 12000 4.396290684
+ the length of lcs is 8167 for string length 12500 4.770638194
+ the length of lcs is 8472 for string length 13000 5.152305904
+ the length of lcs is 8823 for string length 13500 5.569927610
+ the length of lcs is 9142 for string length 14000 5.982990312
+ the length of lcs is 9472 for string length 14500 6.410588531
+ the length of lcs is 9777 for string length 15000 6.848767898
+ the length of lcs is 10125 for string length 15500 7.323251122
+ the length of lcs is 10436 for string length 16000 7.790638939
+ the length of lcs is 10745 for string length 16500 8.287762504
+ the length of lcs is 11100 for string length 17000 8.811743396
+ the length of lcs is 11420 for string length 17500 9.318655962
+ the length of lcs is 11769 for string length 18000 9.855419848
+ the length of lcs is 12075 for string length 18500 10.411791418
+ the length of lcs is 12411 for string length 19000 11.20962804
+ the length of lcs is 12730 for string length 19500 11.814407759
+ the length of lcs is 13083 for string length 20000 12.205868785
+ the length of lcs is 13384 for string length 20500 12.786892512
+ the length of lcs is 13726 for string length 21000 13.411778427
+ the length of lcs is 14062 for string length 21500 14.45644025
+ the length of lcs is 14362 for string length 22000 14.726880551
+ the length of lcs is 14676 for string length 22500 15.403583930
+ the length of lcs is 15025 for string length 23000 16.85113823
+ the length of lcs is 15403 for string length 23500 16.792787340
+ the length of lcs is 15678 for string length 24000 17.582045830
+ the length of lcs is 16007 for string length 24500 18.257118653
+ the length of lcs is 16342 for string length 25000 19.32360820
+ the length of lcs is 16646 for string length 25500 19.847946589
+ the length of lcs is 16990 for string length 26000 20.568325081
+ the length of lcs is 17301 for string length 26500 21.302084856
+ the length of lcs is 17653 for string length 27000 22.118033630
+ the length of lcs is 17979 for string length 27500 22.955870436
+ the length of lcs is 0 for string length 00:3788
+case 48 the length of lcs is 4057 for string length 5000 time taken 0.744986917
+case 49 the length of lcs is 4457 for string length 5500 time taken 0.911630677
+case 50 the length of lcs is 4852 for string length 6000 time taken 1.389514067
+case 51 the length of lcs is 5263 for string length 6500 time taken 1.251276906
+case 52 the length of lcs is 5669 for string length 7000 time taken 1.450382615
+case 53 the length of lcs is 6099 for string length 7500 time taken 1.662104636
+case 54 the length of lcs is 6484 for string length 8000 time taken 1.888218899
+case 55 the length of lcs is 6870 for string length 8500 time taken 2.127492761
+case 56 the length of lcs is 7294 for string length 9000 time taken 2.396453257
+case 57 the length of lcs is 7690 for string length 9500 time taken 2.666120040
+case 58 the length of lcs is 8108 for string length 10000 time taken 2.953758227
+case 59 the length of lcs is 8510 for string length 10500 time taken 3.258880727
+case 60 the length of lcs is 8920 for string length 11000 time taken 3.579805290
+case 61 the length of lcs is 9298 for string length 11500 time taken 3.896376909
+case 62 the length of lcs is 9715 for string length 12000 time taken 4.253355737
+case 63 the length of lcs is 10123 for string length 12500 time taken 4.614469928
+case 64 the length of lcs is 10545 for string length 13000 time taken 4.981606861
+case 65 the length of lcs is 10960 for string length 13500 time taken 5.386884697
+case 66 the length of lcs is 11365 for string length 14000 time taken 5.774565820
+case 67 the length of lcs is 11763 for string length 14500 time taken 6.214341311
+case 68 the length of lcs is 12181 for string length 15000 time taken 6.659299740
+case 69 the length of lcs is 12536 for string length 15500 time taken 7.83894607
+case 70 the length of lcs is 12964 for string length 16000 time taken 7.553836007
+case 71 the length of lcs is 13380 for string length 16500 time taken 8.50091162
+case 72 the length of lcs is 13798 for string length 17000 time taken 8.626162763
+case 73 the length of lcs is 14185 for string length 17500 time taken 9.49597302
+case 74 the length of lcs is 14602 for string length 18000 time taken 9.567704323
+case 75 the length of lcs is 14973 for string length 18500 time taken 10.124145446
+case 76 the length of lcs is 15424 for string length 19000 time taken 10.673306632
+case 77 the length of lcs is 15796 for string length 19500 time taken 11.362966519
+case 78 the length of lcs is 16257 for string length 20000 time taken 11.851685181
+case 79 the length of lcs is 16615 for string length 20500 time taken 12.432365733
+case 80 the length of lcs is 17024 for string length 21000 time taken 13.41624560
+case 81 the length of lcs is 17472 for string length 21500 time taken 13.679488031
+case 82 the length of lcs is 17852 for string length 22000 time taken 14.297610049
+case 83 the length of lcs is 18239 for string length 22500 time taken 14.941842579
+case 84 the length of lcs is 18676 for string length 23000 time taken 15.666495625
+case 85 the length of lcs is 19077 for string length 23500 time taken 16.307396684
+case 86 the length of lcs is 19464 for string length 24000 time taken 17.60031730
+case 87 the length of lcs is 19886 for string length 24500 time taken 17.805919966
+case 88 the length of lcs is 20265 for string length 25000 time taken 18.509316090
+case 89 the length of lcs is 20679 for string length 25500 time taken 19.493423679
+case 90 the length of lcs is 21110 for string length 26000 time taken 20.85861358
+case 91 the length of lcs is 21489 for string length 26500 time taken 20.928867781
+case 92 the length of lcs is 21898 for string length 27000 time taken 21.600190718
+case 93 the length of lcs is 22339 for string length 27500 time taken 22.384705039
+case 94 the length of lcs is 0 for string length 0 time taken 0:2507

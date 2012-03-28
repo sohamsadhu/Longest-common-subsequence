@@ -1,0 +1,5 @@
+This following project consists of 4 different programs that do the same thing; that is find the longest common subsequence.
+The four programs starting in order of highest execution times asymptotically begin with naive recursive, with memoization, dynamic programming and lastly implementing the Hirschberg algorithm to implement the same.
+Each of the program has the object file and the executable separate so just doing a "./ hirschberg.out > lcs_hirschberg_output.txt" on the bash shell acheives the result.
+To create the random input string input one of only binary string that is in file binary_seq_input_long.txt and one with characters that is in text file dna_input_long.txt, used the program random_input_text.cpp
+The programs were compiled and ran using g++ 4.0 on Ubuntu 10.04.

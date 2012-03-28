@@ -1,0 +1,8 @@
+case 1 for string length 60000  lcs length is 39245 time taken 207.356579829
+case 2 for string length 80000  lcs length is 52282 time taken 370.454002464
+case 3 for string length 100000  lcs length is 65367 time taken 596.314238720
+case 4 for string length 120000  lcs length is 78465 time taken 890.133057993
+case 5 for string length 140000  lcs length is 91605 time taken 1186.41003587
+case 6 for string length 160000  lcs length is 104675 time taken 1497.588193529
+case 7 for string length 180000  lcs length is 117768 time taken 1870.844664669
+case 8 for string length 200000  lcs length is 130821 time taken 2316.805038850
